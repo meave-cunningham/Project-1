@@ -81,6 +81,16 @@
 
 .woah {
     background: blue;
+    animation-name: colors;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes colors {
+    0% {color:blue;}
+    50%{color:greenyellow;}
+    100%{color:blue;}
 }
 
 .woah:hover {
