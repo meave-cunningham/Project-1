@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+
+.grid-container1 {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto 400px;
+    background-color: black;
+    padding: 0px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+}
+
+.grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background:black;
+
+}
+
+.grid-item img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }  
+
+
+.iloveyou {
+    height: 400px;
+    background-image: url(https://i.giphy.com/media/ToMjGpnXBTw7vnokxhu/giphy.webp);
+    background-size: cover;
+}
+.iloveyou p {
+    margin-top: 60px;
+    margin-left: 40px;
+    background:transparent;
+    border-style: dotted;
+    width: 400px;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 5px; 
+    color:white;
+    padding-top: 150px;
+    text-align: center;
+    height:400px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    animation-name: spinny;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinny {
+    0% {transform:rotate(-360deg);}
+}
+
+.woah {
+    background: blue;
+}
+
+.woah:hover {
+    background: greenyellow;
+}
+
+.woah p {
+    background-color: transparent;
+    font-size: 100px;
+    padding-top: 150px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.woah p:hover {
+    animation-name: boink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes boink {
+    from {transform: scale3d(1, 1, 1);}
+    30% {transform: scale3d(1.25, 0.75, 1);}
+    40% {transform: scale3d(0.75, 1.25, 1);}
+    50% {transform: scale3d(1.15, 0.85, 1);}
+    65% {transform: scale3d(0.95, 1.05, 1);}
+    75% {transform: scale3d(1.05, 0.95, 1);}
+    to {transform: scale3d(1, 1, 1);}
+  }
+
+
+.grid-container2 {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto;
+    background-color: black;
+    padding: 0px;
+}
+
+.grid-item2 {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item5 {
+    background-image: url(https://media1.giphy.com/media/aDYXQy3W8XFG8/giphy.gif?cid=790b761129cbc411c793acbdf162d0e4cdee0fa828be7cc6&rid=giphy.gif&ct=g);
+    background-size: cover;
+}
+
+.kung-fu {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+    background-color: black;
+    font-family:'Courier New', Courier, monospace;
+    color: greenyellow;
+    font-size: 50px;
+    animation: glitch 1s ease-in-out infinite;
+    
+}
+
+@keyframes glitch{
+    2%,64%{transform: translate(20px,0) skew(0deg);}
+    4%,100%{transform: translate(10px,0) skew(0deg);color: white;}
+    6%,63%{transform: translate(-10px,0) skew(0deg);}
+    62%{transform: translate(0,0) ;color: red;}
+  }
+
+.vaya-con-dios {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.vaya-con-dios span {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    display: inline-block;
+    color: white;
+    background:transparent;
+    font-size: 4em;
+    text-transform: uppercase;
+    animation: wave 1.5s ease-in-out infinite;
+    animation-delay: calc(.1s * var(--i))
+} 
+
+@keyframes wave {
+    0%, 100% {transform: translateY(0px);}
+    20% {transform: translateY(-30px);}
+    40% {transform: translateY(0px);}
+  }
+
+.footer-container {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto;
+    background-color: black;
+    padding: 0px;
+}
+
+.footer-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*
+
+.bullets {
+    
+}
+*/
