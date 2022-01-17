@@ -96,7 +96,7 @@
 }
 .woah p:hover {
     animation-name: boink;
-    animation-duration: 1s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 
 }
