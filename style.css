@@ -145,10 +145,11 @@
 }
 
 @keyframes glitch{
-    2%,64%{transform: translate(20px,0) skew(0deg);}
-    4%,100%{transform: translate(10px,0) skew(0deg);color: white;}
-    6%,63%{transform: translate(-10px,0) skew(0deg);}
-    62%{transform: translate(0,0) ;color: red;}
+    5%{color: white;}
+    50%{color: red;}
+    75%{color:yellowgreen;}
+    100%{color: blue;}
+
   }
 
 .vaya-con-dios {
